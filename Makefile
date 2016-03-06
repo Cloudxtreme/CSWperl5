@@ -17,14 +17,14 @@ define BLURB
 endef
 
 #MASTER_SITES = manual://
-MASTER_SITES         = http://www.cpan.org/src/5.0/
-VENDOR_URL           = http://www.perl.org
-DISTFILES            = perl-$(VERSION_FULL).tar.bz2
-PACKAGING_PLATFORMS += solaris10-i386 solaris10-sparc
-PACKAGES             = CSWperl5
-PKG_DESC_CSWperl     = $(DESCRIPTION)
-SPKG_DESC_CSWperl    = $(DESCRIPTION)
-OBSOLETED_BY_CSWperl = CSWperl CSWperldoc CSWpm-cpan-meta CSWpm-test-use-ok CSWpm-test-tester CSWpm-json-pp CSWpm-parse-cpan-meta CSWpm-cpan-meta-yaml CSWpm-module-metadata CSWpm-experimental CSWpm-cpan-meta-requirements CSWpm-perl-ostype
+MASTER_SITES          = http://www.cpan.org/src/5.0/
+VENDOR_URL            = http://www.perl.org
+DISTFILES             = perl-$(VERSION_FULL).tar.bz2
+PACKAGING_PLATFORMS  += solaris10-i386 solaris10-sparc
+PACKAGES              = CSWperl5
+PKG_DESC_CSWperl5     = $(DESCRIPTION)
+SPKG_DESC_CSWperl5    = $(DESCRIPTION)
+OBSOLETED_BY_CSWperl5 = CSWperl CSWperldoc CSWpm-cpan-meta CSWpm-test-use-ok CSWpm-test-tester CSWpm-json-pp CSWpm-parse-cpan-meta CSWpm-cpan-meta-yaml CSWpm-module-metadata CSWpm-experimental CSWpm-cpan-meta-requirements CSWpm-perl-ostype
 LICENSE 	     = Copying
 
 # GCC build (Sun Studio build has been fixed)
