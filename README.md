@@ -1,4 +1,4 @@
-# CSWperl
+# CSWperl5
 OpenCSW build recipes for up to date perl Solaris packages (s10/11+sparc/x86-64).
 
 OpenCSW (pronounced open-cashew /ˈkæʃuː/) is an easy to use open source software distribution installable on top of Solaris and Solaris-based systems. OpenCSW is a community project dedicated to working closely with upstream projects to improve portability of open source software.
