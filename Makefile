@@ -46,9 +46,9 @@ CONFIGURE_ARGS 	 += -Darchlib=$(libdir)/perl/$(VERSION_MAJOR_FULL)
 CONFIGURE_ARGS   += -Dcc=$(CC)
 CONFIGURE_ARGS   += -Dcf_email=$(SPKG_EMAIL)
 CONFIGURE_ARGS   += -Dman1dir=$(mandir)/man1
-CONFIGURE_ARGS   += -Dman1ext=1
+CONFIGURE_ARGS   += -Dman1ext=1perl
 CONFIGURE_ARGS   += -Dman3dir=$(mandir)/man3
-CONFIGURE_ARGS   += -Dman3ext=3
+CONFIGURE_ARGS   += -Dman3ext=3perl
 CONFIGURE_ARGS   += -Dperladmin="root@localhost"
 CONFIGURE_ARGS   += -Dprefix=$(prefix)
 CONFIGURE_ARGS   += -Dbin=$(bindir)
@@ -89,8 +89,9 @@ RUNTIME_DEP_PKGS_CSWperl5   += CSWlibssp0
 RUNTIME_DEP_PKGS_CSWperl5   += CSWlibgdbm4
 CHECKPKG_OVERRIDES_CSWperl5 += file-with-bad-content
 # Temporary deps
-#RUNTIME_DEP_PKGS_CSWperl5   += CSWperl
+RUNTIME_DEP_PKGS_CSWperl5   += CSWperl
 CHECKPKG_OVERRIDES_CSWperl5 += missing-dependency|CSWperl
+CHECKPKG_OVERRIDES_CSWpm-cpan-meta-requirements += catalogname-too-long
 # weird .nfs* file leftover
 #CHECKPKG_OVERRIDES_CSWperl5 += pkginfo-opencsw-repository-uncommitted
 
